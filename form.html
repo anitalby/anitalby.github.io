@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body style="background:#0f172a; color:white; text-align:center; font-family:Arial;">
+
+<h1 style="color:#38bdf8;">Form Validation</h1>
+
+<form onsubmit="return validate()">
+<input id="name" placeholder="Name"><br><br>
+<input id="email" placeholder="Email"><br><br>
+<button>Submit</button>
+</form>
+
+<script>
+function validate(){
+if(name.value=="" || email.value==""){
+alert("Fill all fields");
+return false;
+}
+return true;
+}
+</script>
+
+<br>
+
+<a href="projects.html" style="color:#38bdf8;">← Back</a>
+
+</body>
+</html>
