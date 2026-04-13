@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anit Alby Portfolio</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #0f2027, #000000);
+    color: white;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at top, #0f2027, #000000);
+}
+
+/* GLASS EFFECT CONTAINER */
+.container {
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0,198,255,0.2);
+}
+
+/* TAG */
+.tag {
+    background: rgba(0,198,255,0.2);
+    padding: 8px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* TEXT */
+h1 {
+    font-size: 3rem;
+}
+
+.highlight {
+    color: #00c6ff;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* PROFILE IMAGE */
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 3px solid #00c6ff;
+    box-shadow: 0 0 25px #00c6ff;
+    object-fit: cover;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+}
+
+.secondary {
+    border: 2px solid #00c6ff;
+    color: #00c6ff;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00c6ff;
+}
+
+/* EXPLORE SECTION */
+.explore {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #141e30, #243b55);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    padding: 25px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    backdrop-filter: blur(5px);
+}
+
+.card:hover {
+    background: #00c6ff;
+    color: black;
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 0 20px #00c6ff;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="container">
+        <div class="tag">Computer Science Engineering Student</div>
+
+        <h1>Hi, I am <span class="highlight">Anit Alby</span></h1>
+
+        <p>
+            Passionate about programming, web development, and building creative solutions.
+            I enjoy learning new technologies and improving my skills every day.
+        </p>
+
+        <img src="myname.jpeg">
+
+        <br><br>
+        <a href="#explore" class="btn primary">View Portfolio</a>
+        <a href="contact.html" class="btn secondary">Contact Me</a>
+    </div>
+</div>
+
+<!-- EXPLORE SECTION -->
+<div id="explore" class="explore">
+    <h1>Explore</h1>
+
+    <div class="grid">
+        <a href="education.html" class="card">Education</a>
+        <a href="skills.html" class="card">Skills</a>
+        <a href="projects.html" class="card">Projects</a>
+        <a href="contact.html" class="card">Contact</a>
+    </div>
+</div>
+
+</body>
+</html>
